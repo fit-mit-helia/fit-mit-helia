@@ -8,16 +8,34 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
+      position: relative;
     }
+
+    /* Hintergrundbild auf ganzer Seite */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('DEINBILDURL') no-repeat center center / cover;
+      z-index: -2;
+    }
+
+    /* Graue, unscharfe, helle Overlay-Schicht */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(4px);
+      z-index: -1;
+    }
+
     header {
-      background: url('https://source.unsplash.com/1600x600/?fitness,woman') no-repeat center center;
-      background-size: cover;
-      color: #e67e22;
       text-align: center;
-      padding: 100px 20px;
+      padding: 100px 20px 60px;
+      color: #e67e22;
     }
     header h1 {
       font-size: 3rem;
@@ -26,28 +44,52 @@
     header p {
       font-size: 1.2rem;
     }
+
     section {
       max-width: 900px;
       margin: auto;
       padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
     }
+
     h2 {
       color: #e67e22;
       margin-bottom: 10px;
     }
+
     ul {
       list-style-type: disc;
       margin-left: 20px;
     }
+
     .kontakt a {
       color: #e67e22;
       text-decoration: none;
     }
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
+    }
+
+    .galerie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .galerie img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -65,7 +107,6 @@
   </p>
 
   <h2>Meine Leistungen</h2>
-
   <h3>Personal Training (1:1)</h3>
   <ul>
     <li>Krafttraining & Langhanteltraining</li>
@@ -92,10 +133,9 @@
   <p>
     Ich bin wirklich für dich da. Kein leeres Gerede – ich freue mich über deinen Fortschritt, als wäre es mein eigener. Ich sehe, was du brauchst, oft bevor du es selbst bemerkst: sei es technische Feinjustierung, eine Anpassung des Trainingsplans oder einfach ein motivierendes Wort zur richtigen Zeit. Dein Ziel ist mein Ziel – und ich gebe alles, damit du es erreichst.
   </p>
+  <p><strong>Melde dich bei mir und wir finden das passende Angebot für dich!</strong></p>
 
   <p><strong>Gerade, wenn du AnfängerIn bist, nicht weißt, wie du deine Fitness-Reise starten sollst und noch nicht an dich selbst glaubst:</strong> Ich begleite dich individuell, verständnisvoll und mit vollem Einsatz. Gemeinsam arbeiten wir smart, sicher und mit Herzblut an deiner Entwicklung – körperlich und mental.</p>
-  </p>
-<p><strong>Melde dich bei mir und wir finden das passende Angebot für dich!</strong></p>
 </section>
 
 <section>
@@ -106,6 +146,13 @@
   <p>
     Du kannst also mit herausragenden didaktischen Fähigkeiten rechnen!
   </p>
+</section>
+
+<section>
+  <h2>Galerie</h2>
+  <div class="galerie">
+    <img src="DEINBILDURL" alt="Helia beim Training">
+  </div>
 </section>
 
 <section class="kontakt">
@@ -121,3 +168,4 @@
 
 </body>
 </html>
+
