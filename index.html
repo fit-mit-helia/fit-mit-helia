@@ -5,6 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fit mit Helia</title>
   <style>
+    <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* === Navigationsmenü === */
+  nav {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 15px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #e67e22;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* ... der Rest deines CSS kommt hier ... */
+</style>
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -91,10 +136,19 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+    
   </style>
 </head>
 <body>
-
+<nav>
+  <ul>
+    <li><a href="#ueber-mich">Über mich</a></li>
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#qualifikationen">Qualifikationen</a></li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
 <header>
   <h1>Fit mit Helia</h1>
   <p>Personal Training & Gruppencoaching mit Helia Shafigh</p>
