@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie – Fit mit Helia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
 
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #e67e22;
+      color: white;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #e67e22;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .galerie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .galerie img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .zurueck {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .zurueck a {
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Galerie</h1>
+  <p>Einblicke in mein Training, Coaching & Wettkämpfe</p>
+</header>
+
+<section>
+  <div class="galerie">
+    <img src="/mnt/data/15344_20250518_155826_491676612_original.JPG" alt="Helia beim Rope Pull">
+    <!-- Hier kannst du weitere Bilder hinzufügen -->
+  </div>
+
+  <div class="zurueck">
+    <p><a href="index.html">&larr; Zurück zur Startseite</a></p>
+  </div>
+</section>
+
+</body>
+</html>
