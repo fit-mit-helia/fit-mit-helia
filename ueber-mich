@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über mich – Fit mit Helia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Start</a></li>
+    <li><a href="index.html#leistungen">Leistungen</a></li>
+    <li><a href="index.html#besonders">Coaching</a></li>
+    <li><a href="index.html#kontakt">Kontakt</a></li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="ueber-mich.html">Über mich</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Über mich</h1>
+  <p>Mehr über meine Motivation, Qualifikationen und meinen Hintergrund</p>
+</header>
+
+<section>
+  <h2>Über mich</h2>
+  <p>
+    Ich bin seit über drei Jahren als Trainerin für (Klein-)Gruppen im Bereich Cross Training, HIIT, funktionales Training und Langhanteltraining tätig. Meine eigene Leidenschaft gilt dem CrossFit und Kraftdreikampf – ich lebe, was ich coache.
+  </p>
+</section>
+
+<section>
+  <h2>Meine Qualifikationen</h2>
+  <ul>
+    <li>Fitnesstrainer B-Lizenz</li>
+    <li>Fitnesstrainer A-Lizenz</li>
+    <li>Mehrjährige Erfahrung im Gruppencoaching</li>
+    <li>Eigene intensive Trainingspraxis & tiefes Verständnis für individuelle Herausforderungen</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Was mich als Coach besonders macht</h2>
+  <p>
+    Ich bin wirklich für dich da. Kein leeres Gerede – ich freue mich über deinen Fortschritt, als wäre es mein eigener. Ich sehe, was du brauchst, oft bevor du es selbst bemerkst: sei es technische Feinjustierung, eine Anpassung des Trainingsplans oder einfach ein motivierendes Wort zur richtigen Zeit. Dein Ziel ist mein Ziel – und ich gebe alles, damit du es erreichst.
+  </p>
+</section>
+
+<section>
+  <h2>Was mache ich, wenn ich nicht trainiere oder Training gebe?</h2>
+  <p>
+    Aktuell arbeite ich hauptberuflich als Mathematikerin in der Forschung – das heißt: analytisches Denken, Struktur und Präzision gehören ebenso zu mir wie Motivation, Begeisterung und Power. Außerdem war ich vier Jahre lang Mathematik-Tutorin an der Technischen Universität Berlin und 10 Jahre private Nachhilfelehrerin.
+  </p>
+  <p>
+    Du kannst also mit herausragenden didaktischen Fähigkeiten rechnen!
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Fit mit Helia – Alle Rechte vorbehalten</p>
+</footer>
+
+</body>
+</html>
 
