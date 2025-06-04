@@ -1,0 +1,93 @@
+/* Grundlayout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Header */
+header {
+  background-color: #f8f8f8;
+  padding: 120px 20px 60px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Sektionen */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+section h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+/* Kontakt */
+.kontakt a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
