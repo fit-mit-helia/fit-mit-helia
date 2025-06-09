@@ -43,7 +43,7 @@
     }
 
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
@@ -54,10 +54,27 @@
       text-align: center;
     }
 
-    .galerie-hinweis {
-      text-align: center;
-      font-style: italic;
-      color: #777;
+    .galerie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .galerie img {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .galerie img {
+        max-width: 100%;
+        height: auto;
+      }
     }
 
     footer {
@@ -85,11 +102,26 @@
 
 <header>
   <h1>Galerie</h1>
-  <p>Einblicke in mein Training und Coaching</p>
+  <p>Einblicke in unsere Kurse</p>
 </header>
 
-<section>
-  <p class="galerie-hinweis">Bilder in Kürze</p>
+<section class="galerie">
+  <!-- Beispielbilder, du ersetzt src durch deine echten URLs -->
+  <img src="bilder/Bild (1).jpg" alt="Bild 1">
+  <img src="bilder/Bild (2).jpg" alt="Bild 2">
+  <img src="bilder/Bild (3).jpg" alt="Bild 3">
+  <img src="bilder/Bild (4).jpg" alt="Bild 4">
+  <img src="bilder/Bild (5).jpg" alt="Bild 5">
+  <img src="bilder/Bild (6).jpg" alt="Bild 6">
+  <img src="bilder/Bild (7).jpg" alt="Bild 7">
+  <img src="bilder/Bild (8).jpg" alt="Bild 8">
+  <img src="bilder/Bild (9).jpg" alt="Bild 9">
+  <img src="bilder/Bild (10).jpg" alt="Bild 10">
+  <img src="bilder/Bild (11).jpg" alt="Bild 11">
+  <img src="bilder/Bild (12).jpg" alt="Bild 12">
+  <img src="bilder/Bild (13).jpg" alt="Bild 13">
+  <img src="bilder/Bild (14).jpg" alt="Bild 14">
+  <img src="bilder/Bild (15).jpg" alt="Bild 15">
 </section>
 
 <section class="kontakt" id="kontakt">
@@ -103,6 +135,10 @@
 <footer>
   <p>&copy; 2025 Fit mit Helia – Alle Rechte vorbehalten</p>
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
