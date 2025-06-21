@@ -8,6 +8,53 @@
 </head>
 <body>
 
+  section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #e67e22;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .galerie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .galerie img {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .galerie img {
+        max-width: 100%;
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .kontakt a {
+      color: #e67e22;
+      text-decoration: none;
+    }
+  </style>
+
 <nav>
   <ul>
     <li><a href="index.html">Leistungen</a></li>
@@ -15,6 +62,8 @@
     <li><a href="galerie.html">Galerie</a></li>
   </ul>
 </nav>
+
+  
 
 <header>
   <h1>Über mich</h1>
