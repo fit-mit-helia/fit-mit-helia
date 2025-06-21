@@ -8,52 +8,7 @@
 </head>
 <body>
 
-  section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
 
-    h2 {
-      color: #e67e22;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .galerie {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .galerie img {
-      max-width: 250px;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    @media (max-width: 768px) {
-      .galerie img {
-        max-width: 100%;
-      }
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .kontakt a {
-      color: #e67e22;
-      text-decoration: none;
-    }
-  </style>
 
 <nav>
   <ul>
@@ -99,8 +54,11 @@
   </p>
 </section>
 
+
  
-  <section class="galerie">
+ <section>
+  <h2 style="color: #e67e22; text-align: center; margin-bottom: 20px;">Einblicke in mein Training</h2>
+  <div class="galerie">
     <img src="images/h1.jpeg" alt="Training 1" >
     <img src="images/h2.jpeg" alt="Training 2" >
     <img src="images/h3.jpeg" alt="Training 3" >
@@ -110,6 +68,7 @@
      <img src="images/h7.JPG" alt="Training 7" >
      <img src="images/h8.JPG" alt="Training 8" >
      <img src="images/h9.JPG" alt="Training 9" >
+     </div>
 </section>
 
 
