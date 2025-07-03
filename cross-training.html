@@ -43,15 +43,37 @@
     }
 
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
 
     h2 {
       color: #306fb9;
-      text-align: center;
       margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .galerie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .galerie img {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .galerie img {
+        max-width: 100%;
+      }
     }
 
     footer {
@@ -64,10 +86,6 @@
     .kontakt a {
       color: #306fb9;
       text-decoration: none;
-    }
-
-    .kontakt a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
