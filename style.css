@@ -40,7 +40,7 @@ nav ul li a {
 header {
       text-align: center;
       padding: 60px 20px;
-      background-color: #306fb9;
+      background-color: #7a977a;
       color: white;
     }
 
@@ -62,7 +62,7 @@ section {
 }
 
 section h2 {
-  color: #306fb9;
+  color: #7a977a;
   margin-bottom: 10px;
 }
 
@@ -79,7 +79,7 @@ ul {
 
 /* Kontakt */
 .kontakt a {
-  color: #306fb9;
+  color: #7a977a;
   text-decoration: none;
 }
 
