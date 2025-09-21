@@ -122,16 +122,16 @@ footer {
 }
 
 .ueber-mich-text {
-  flex: 1 1 55%; /* Text etwas breiter */
+  flex: 1 1 65%; /* mehr Platz für Text */
 }
 
 .ueber-mich-bild {
-  flex: 1 1 35%; /* Bild etwas schmaler */
-  max-width: 300px; /* maximale Breite der Bildspalte */
+  flex: 1 1 25%; /* weniger Platz fürs Bild */
+  max-width: 220px; /* maximale Breite des Bilds */
 }
 
 .ueber-mich-bild img {
-  width: 100%;       /* füllt die Bildspalte */
+  width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
