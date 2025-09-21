@@ -113,3 +113,36 @@ footer {
     max-width: 100%;
   }
 }
+
+.ueber-mich-inhalt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px; /* Abstand zwischen Text und Bild */
+}
+
+.ueber-mich-text {
+  flex: 1 1 50%; /* halbe Breite */
+}
+
+.ueber-mich-bild {
+  flex: 1 1 40%; /* etwas schmaler */
+}
+
+.ueber-mich-bild img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Auf Handys untereinander */
+@media (max-width: 768px) {
+  .ueber-mich-inhalt {
+    flex-direction: column;
+  }
+  .ueber-mich-text,
+  .ueber-mich-bild {
+    flex: 1 1 100%;
+  }
+}
