@@ -128,6 +128,7 @@ footer {
 .ueber-mich-bild {
   flex: 1 1 25%; /* weniger Platz fürs Bild */
   max-width: 220px; /* maximale Breite des Bilds */
+  margin-bottom: -30px; /* Bild „ragt“ etwas in den nächsten Abschnitt */
 }
 
 .ueber-mich-bild img {
@@ -146,20 +147,11 @@ footer {
   .ueber-mich-bild {
     flex: 1 1 100%;
     max-width: 100%;
+    margin-bottom: 0;
   }
 }
 
-.ueber-mich-bild {
-  flex: 1 1 25%;
-  max-width: 220px;
-  margin-bottom: -30px; /* Bild „ragt“ etwas in den nächsten Abschnitt */
-}
-
 /* Qualifikationen etwas höher beginnen */
-section + section {
-  margin-top: 20px; /* normaler Abstand */
-}
-
 section.qualifikationen {
   margin-top: -30px; /* schiebt den Qualifikationen-Block nach oben */
 }
