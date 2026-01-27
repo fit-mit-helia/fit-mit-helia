@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Preise | Fit mit Helia</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Kleiner Zusatz für eine schöne Darstellung der Preise */
+    .preis-tabelle {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .preis-tabelle td {
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    .preis-tabelle td:last-child {
+      text-align: right;
+      font-weight: bold;
+      color: #7a977a;
+    }
+    .highlight-preis {
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -23,31 +48,39 @@
 
 <section>
   <h2>Personal Training (1:1)</h2>
-  <div class="preis-box">
-    <p style="font-size: 1.5rem; color: #7a977a; font-weight: bold;">100,00 € pro Stunde</p>
-    <ul>
-      <li>Individuelle Trainingsbetreuung</li>
-      <li>Inkl. Technik-Check & Trainingsplanung</li>
-      <li>Ort: Mittelstr. 34, Steglitz</li>
-      <li>Outdoor oder Home-Training auf Anfrage (ggf. zzgl. Fahrtkosten)</li>
-    </ul>
-  </div>
+  <p>Individuelles Training, perfekt abgestimmt auf deine Ziele und dein Level.</p>
+  
+  <table class="preis-tabelle">
+    <tr>
+      <td>Einzelstunde (flexibel)</td>
+      <td class="highlight-preis">100 € / h</td>
+    </tr>
+    <tr>
+      <td>Ab 4 Terminen pro Monat</td>
+      <td class="highlight-preis">90 € / h</td>
+    </tr>
+    <tr>
+      <td>Ab 8 Terminen pro Monat</td>
+      <td class="highlight-preis">80 € / h</td>
+    </tr>
+  </table>
+
+  <p style="text-align: center; margin-top: 10px;">
+    <em>In der Mittelstr. 34, Steglitz. Outdoor oder Home-Training auf Anfrage (ggf. zzgl. Fahrtkosten).</em>
+  </p>
 </section>
 
-<section>
-  <h2>Gruppentraining</h2>
-  <p>Die Preise für das Gruppentraining (Cross Training & Krafttraining) richten sich nach den Tarifen des TU-Sport bzw. FU-Sport. Bitte klicke auf die Links auf der Startseite für die aktuellen Semesterpreise.</p>
-</section>
-
-<section>
+  <section>
   <h2>Online Coaching & Beratung</h2>
   <p>Individuelle Pakete für Ernährungsberatung oder langfristiges Online-Coaching auf Anfrage. Melde dich einfach für ein unverbindliches Erstgespräch!</p>
 </section>
 
+
 <section class="kontakt">
-  <h2>Jetzt Termin vereinbaren</h2>
-  <p>Schreib mir eine Nachricht und wir starten gemeinsam durch!</p>
+  <h2>Interesse geweckt?</h2>
+  <p>Lass uns gemeinsam durchstarten! Schreib mir eine Mail oder ruf mich an!</p>
   <p><strong>E-Mail:</strong> <a href="mailto:helia7773@yahoo.com">helia7773@yahoo.com</a></p>
+  <p><strong>Telefon:</strong> <a href="tel:+491742769807">0174 2769807</a></p>
 </section>
 
 <footer>
