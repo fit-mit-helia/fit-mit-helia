@@ -155,3 +155,33 @@ footer {
 section.qualifikationen {
   margin-top: -30px; /* schiebt den Qualifikationen-Block nach oben */
 }
+
+/* Bewertungen */
+
+.bewertung {
+    max-width: 850px;
+    margin: 0 auto 70px auto;
+}
+
+.bewertung-zitat {
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #7a977a;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.bewertung-person {
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.bewertung-text {
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1.05rem;
+}
