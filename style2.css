@@ -1,0 +1,560 @@
+/* =========================
+   Grundlayout
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background: #f8f8f6;
+    line-height: 1.7;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+
+h2 {
+    font-size: 2.2rem;
+    color: #4e6e56;
+    margin-bottom: 30px;
+}
+
+
+p {
+    font-size: 1.05rem;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4e6e56;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: #4e6e56;
+}
+
+
+.nav-button {
+    background: #4e6e56;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.nav-button:hover {
+    background: #3d5844;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+
+.hero {
+
+    height: 90vh;
+    min-height: 650px;
+
+    background-image:
+    url("hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    color:white;
+}
+
+
+
+.hero-overlay {
+
+    position:absolute;
+    inset:0;
+
+    background:
+    rgba(0,0,0,0.45);
+
+}
+
+
+
+.hero-content {
+
+    position:relative;
+    max-width:800px;
+    padding:20px;
+
+}
+
+
+.hero h1 {
+
+    font-size:5rem;
+    margin:0 0 10px;
+    color:white;
+
+}
+
+
+.hero h2 {
+
+    color:white;
+    font-size:2rem;
+    font-weight:400;
+
+}
+
+
+.hero p {
+
+    font-size:1.3rem;
+    margin-bottom:40px;
+
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+
+.button {
+
+    display:inline-block;
+
+    background:#4e6e56;
+
+    color:white;
+
+    padding:16px 35px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+
+.button:hover {
+
+    background:#3d5844;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+.button.secondary {
+
+    background:white;
+
+    color:#4e6e56;
+
+}
+
+
+
+/* =========================
+   Sections
+========================= */
+
+
+section {
+
+    padding:90px 0;
+
+}
+
+
+
+.intro {
+
+    background:white;
+
+    text-align:center;
+
+}
+
+
+.intro p {
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+
+
+.why {
+
+    background:#f1f4ef;
+
+}
+
+
+
+.features {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.feature {
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+
+.icon {
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.feature h3 {
+
+    color:#4e6e56;
+
+}
+
+
+
+/* =========================
+   Leistungen Karten
+========================= */
+
+
+.leistungen {
+
+    background:white;
+
+}
+
+
+
+.cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.card {
+
+    background:#f8f8f6;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border-left:5px solid #4e6e56;
+
+    transition:0.3s;
+
+}
+
+
+
+.card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.12);
+
+}
+
+
+
+.card h3 {
+
+    color:#4e6e56;
+
+}
+
+
+
+/* =========================
+   Standort / Gruppenkurse
+========================= */
+
+
+.location,
+.group {
+
+    text-align:center;
+
+}
+
+
+
+
+.coaching {
+
+    background:#4e6e56;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.coaching h2 {
+
+    color:white;
+
+}
+
+
+
+.coaching p {
+
+    max-width:800px;
+
+    margin:20px auto;
+
+}
+
+
+
+/* =========================
+   Kontakt
+========================= */
+
+
+.kontakt {
+
+    background:white;
+
+}
+
+
+
+.contact-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.contact-grid div {
+
+    background:#f8f8f6;
+
+    padding:25px;
+
+    border-radius:15px;
+
+}
+
+
+
+.contact-grid h3 {
+
+    color:#4e6e56;
+
+}
+
+
+
+.contact-grid a {
+
+    color:#333;
+
+    text-decoration:none;
+
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+
+
+footer {
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 0;
+
+}
+
+
+
+footer a {
+
+    color:white;
+
+}
+
+
+
+/* =========================
+   Mobile
+========================= */
+
+
+@media(max-width:900px){
+
+
+nav {
+
+    padding:0 20px;
+
+}
+
+
+nav ul {
+
+    display:none;
+
+}
+
+
+.hero h1 {
+
+    font-size:3.2rem;
+
+}
+
+
+.hero h2 {
+
+    font-size:1.5rem;
+
+}
+
+
+.features,
+.cards,
+.contact-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+section {
+
+    padding:60px 0;
+
+}
+
+
+
+}
